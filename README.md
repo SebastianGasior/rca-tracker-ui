@@ -1,16 +1,44 @@
-# React + Vite
+# RCA Tracker UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project started as a small demo API experiment and gradually evolved into a **real full-stack, production-grade cloud application**.  
+The goal is to continue expanding it with new features and improvements while maintaining clean architecture, cloud-native deployment, and professional development practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧱 Current Architecture Overview
 
-## React Compiler
+| Layer        | Stack                                     | Hosting               |
+| ------------ | ----------------------------------------- | --------------------- |
+| **Frontend** | React (Vite) + Bootstrap                  | Azure Static Web Apps |
+| **Backend**  | FastAPI + Docker                          | Azure Container Apps  |
+| **Database** | MongoDB Atlas (Free Tier)                 | Cloud                 |
+| **CI/CD**    | GitHub Actions + Azure                    | Automatic deployments |
+| **API CORS** | Configured for your Static Web App domain | ✅ Working            |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌍 Live Full-Stack Demo
+**Frontend (React + Bootstrap)**  
+https://black-sea-064252b03.3.azurestaticapps.net
+
+**Backend (FastAPI + MongoDB)**  
+https://rca-tracker.whiteocean-65212696.westeurope.azurecontainerapps.io/docs
+
+---
+
+## 🧠 Project Description
+RCA Tracker is a full-stack application designed to record and view incident reports.  
+It features a responsive React interface, a FastAPI backend with MongoDB persistence, and automated CI/CD deployment pipelines using GitHub Actions and Azure services.
+
+---
+
+## 🚀 Future Enhancements
+- Add timestamps and sorting by severity or date  
+- Add chart visualisations (Recharts or Chart.js)  
+- Add authentication (JWT)  
+- Add delete/edit functionality for incidents  
+- Polish UI for better user experience  
+- Add tests for backend and frontend
+
+---
